@@ -3,8 +3,10 @@ source "https://rubygems.org"
 # Same Jekyll and plugin versions as GitHub Pages' own build.
 gem "github-pages", group: :jekyll_plugins
 
-# Ruby 3 no longer ships webrick, which `jekyll serve` needs.
-gem "webrick"
-
-# Silences the Faraday retry-middleware warning from the github-pages plugins.
-gem "faraday-retry"
+# Local builds only: GitHub Pages' builder has its own fixed gem set and warns about
+# any gem outside it. webrick is needed by `jekyll serve` on Ruby 3; faraday-retry
+# silences a warning from the github-pages plugins.
+unless ENV["GITHUB_ACTIONS"]
+  gem "webrick"
+  gem "faraday-retry"
+end
