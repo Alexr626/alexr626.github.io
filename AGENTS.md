@@ -28,6 +28,12 @@ into any committed file or commit message.
   venue's name (see Publication status).
 - Nov 25, 2026: news stays in strict date order, newest first; a new item goes where its
   date falls, not automatically at the top.
+- Nov 25, 2026: the UBC degree is a B.Sc. in Computer Science and Statistics (the brief's
+  intro said Computer Science only).
+- Nov 25, 2026: the Nokia news item names the office, Sunnyvale, California, at Alex's
+  request. That is his workplace, not his home city, which stays off the site.
+- Nov 25, 2026: the CV link points to a public PDF. Before linking a new one, check it for
+  everything under "Privacy" below and for any submission venue.
 
 This repo is public. Everything committed, including this file and the commit history,
 is public.

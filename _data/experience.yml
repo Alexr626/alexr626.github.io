@@ -22,6 +22,7 @@
 - role: Research Assistant
   org: USC Physical Superintelligence Lab
   dates: "Sep 2025 – Jan 2026"
+  description: "Conditional activation steering for vision-language-action models; diagnostic data for VLM failure testing."
   group: Internships and co-ops
 
 - role: Data Science Research Assistant (NSERC USRA)

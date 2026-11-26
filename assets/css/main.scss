@@ -272,13 +272,20 @@ details.questions li::marker { color: var(--accent-2); }
 }
 .experience { list-style: none; margin: 0; padding: 0; }
 .experience li { margin-bottom: 0.7rem; }
+/* Dates stay on the title's first line; a long title wraps beside them. */
 .exp-line {
   display: flex;
-  flex-wrap: wrap;
+  align-items: baseline;
   justify-content: space-between;
   gap: 0 1rem;
 }
-.exp-dates { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+.exp-what { flex: 1 1 auto; min-width: 0; }
+.exp-dates {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
 .exp-desc { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
 /* Placeholders that still need Alex's input */
@@ -313,7 +320,7 @@ details.questions li::marker { color: var(--accent-2); }
   .site-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .headshot { width: 128px; height: 128px; padding: 3px; }
   .news li { grid-template-columns: 1fr; gap: 0; margin-bottom: 0.7rem; }
-  .exp-dates { margin-left: 0; }
+  .exp-line { flex-direction: column; }
   .pub { padding-left: 0.8rem; }
   .pub.has-thumb { grid-template-columns: 1fr; }
 }

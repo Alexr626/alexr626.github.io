@@ -31,7 +31,7 @@
   summary: >-
     Builds matched safe and unsafe image-text pairs and transfers internal states
     between them in three VLMs, locating where in the decoder a joint safety verdict
-    can be changed. [[CONFIRM: summary wording]]
+    can be changed.
 
 - title: "FuzzingRL: Reinforcement Fuzz-Testing for Revealing VLM Failures"
   authors:
