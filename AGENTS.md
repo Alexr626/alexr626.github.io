@@ -18,9 +18,12 @@ into any committed file or commit message.
   their personal websites"). The brief's draft notes are dropped.
 - Nov 25, 2026: the contact email is set in `_data/profile.yml`, split into user and
   domain. Never write it out as one address anywhere in the repo.
-- Nov 25, 2026: the current Nokia role started in Sep 2026. Every other experience entry
-  was an internship or co-op; they are listed under an "Internships and co-ops"
-  subheading (`group` in `_data/experience.yml`).
+- Nov 25, 2026: the current Nokia role started in Sep 2026. Internships and co-ops end
+  their role with "Intern" or "Co-op", with no subheading (an "Internships and co-ops"
+  subheading was tried and dropped the same day). The research-assistant roles at USC
+  and UBC were neither. The two Bell Labs internships are separate entries: research
+  engineering in Jan–May 2025, research in Jun–Aug 2026; the 2026 one has no
+  description (see Privacy). Experience is in order of end date, newest first.
 - Nov 25, 2026: Alex prefers blue and cool colours, with "a little pizzazz" over a plain
   page. The palette is cobalt and teal on a cool white, navy in dark mode; keep accents
   subtle.
@@ -32,8 +35,8 @@ into any committed file or commit message.
   intro said Computer Science only).
 - Nov 25, 2026: the Nokia news item names the office, Sunnyvale, California, at Alex's
   request. That is his workplace, not his home city, which stays off the site.
-- Nov 25, 2026: the CV link points to a public PDF. Before linking a new one, check it for
-  everything under "Privacy" below and for any submission venue.
+- Nov 25, 2026: no CV link for now (`cv: ""` hides it). Before linking any CV, check
+  the PDF for everything under "Privacy" below and for any submission venue.
 
 This repo is public. Everything committed, including this file and the commit history,
 is public.

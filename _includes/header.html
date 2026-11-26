@@ -8,7 +8,9 @@
     <p class="status">{{ p.status }}</p>
     {%- endif %}
     <ul class="links" aria-label="Profiles">
+      {%- if p.cv and p.cv != "" %}
       <li>{% if p.cv contains "[[" %}CV <span class="todo">{{ p.cv }}</span>{% else %}<a class="chip" href="{{ p.cv | relative_url }}">CV</a>{% endif %}</li>
+      {%- endif %}
       {%- for link in p.links %}
       <li>{% if link.url contains "[[" %}{{ link.label }} <span class="todo">{{ link.url }}</span>{% else %}<a class="chip" href="{{ link.url }}">{{ link.label }}</a>{% endif %}</li>
       {%- endfor %}

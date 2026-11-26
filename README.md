@@ -51,12 +51,14 @@ move under a "Show all news" expander automatically.
 ```
 
 **Add a position.** Add it to `_data/experience.yml` with `role`, `org`, `dates` and an
-optional one-line `description`. Give internships and co-ops
-`group: Internships and co-ops` so they're listed under that subheading.
+optional one-line `description`, in order of end date, newest first. For an internship
+or co-op, end the role with "Intern" or "Co-op".
 
-**Swap the CV.** Replace `assets/cv/Alexander_Romanus_CV.pdf`, keeping the file name, and
-make sure the PDF has no phone number. The first time, set
-`cv: /assets/cv/Alexander_Romanus_CV.pdf` in `_data/profile.yml`.
+**Add the CV.** There's no CV link while `cv` in `_data/profile.yml` is empty. To add one,
+put the PDF at `assets/cv/Alexander_Romanus_CV.pdf` and set
+`cv: /assets/cv/Alexander_Romanus_CV.pdf`, or set `cv` to a public link. First make sure
+the PDF has no phone number, home city or GPA, and names no venue a paper is only
+submitted to.
 
 **Placeholders.** Any value containing `[[`, such as `[[TODO: ...]]` or
 `[[CONFIRM: ...]]`, is shown highlighted on the page. Search the repo for `[[` to find
@@ -86,7 +88,7 @@ _includes/*.html       header, email, publication and news entries, JSON-LD Pers
 _layouts/default.html  page shell and footer ("Last updated" is the build date)
 assets/css/main.scss   the only stylesheet (light and dark colours at the top)
 assets/img/            headshot (400x400, metadata stripped), favicon.svg
-assets/cv/             public CV PDF
+assets/cv/             public CV PDF, when there is one
 ```
 
 `source-materials/` (resume, drafts, paper PDFs) stays local and is gitignored.

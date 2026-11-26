@@ -263,13 +263,6 @@ details.questions li::marker { color: var(--accent-2); }
 
 /* Experience */
 
-.exp-group {
-  margin: 1.4rem 0 0.6rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-style: italic;
-  font-weight: 400;
-}
 .experience { list-style: none; margin: 0; padding: 0; }
 .experience li { margin-bottom: 0.7rem; }
 /* Dates stay on the title's first line; a long title wraps beside them. */

@@ -21,9 +21,10 @@ bio: >-
 headshot: /assets/img/headshot.jpg
 headshot_alt: Photo of Alexander Romanus
 
-# Public CV (no phone number). Put the PDF at assets/cv/Alexander_Romanus_CV.pdf,
-# then set: cv: /assets/cv/Alexander_Romanus_CV.pdf
-cv: "[[TODO: add CV PDF]]"
+# CV link, hidden while empty (Alex, Nov 25, 2026: no CV on the site for now).
+# Set it to /assets/cv/Alexander_Romanus_CV.pdf or a public link, after checking the
+# PDF against AGENTS.md's privacy list and for any submission venue.
+cv: ""
 
 # Contact email. Never written out as one address on the page or in this repo: it is
 # rendered as "user [at] domain [dot] tld", with no mailto link.
