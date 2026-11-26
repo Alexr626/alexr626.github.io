@@ -9,11 +9,13 @@
 #   code, project (url)        optional buttons, shown only when set
 #   thumbnail (path), thumbnail_alt, thumbnail_width, thumbnail_height   optional
 #   summary                    optional one-line description of the paper
+#   status                     optional, shown after the venue: "Under review"
 #
 # No per-paper contribution notes (Alex, Nov 25, 2026).
 #
-# venue is the status line. Once a paper is accepted, change only this field to the
-# venue's name and year. Never name a venue a paper is under review at.
+# venue and status make the status line. Once a paper is accepted, set venue to the
+# venue's name and year and delete status. status never names a venue (Alex, Nov 25,
+# 2026: "Under review" with no venue).
 
 - title: "From Local Evidence to Safety Verdicts: Causal Tracing in Vision-Language Models"
   authors:
@@ -22,6 +24,7 @@
     - Alexander Romanus
     - Sampad Mohanty
   venue: arXiv preprint
+  status: Under review
   year: 2026
   arxiv: "2610.07514"
   pdf: https://arxiv.org/pdf/2610.07514
@@ -41,6 +44,7 @@
     - Vitor Campagnolo Guizilini
     - Yue Wang
   venue: arXiv preprint
+  status: Under review
   year: 2026
   arxiv: "2603.06600"
   pdf: https://arxiv.org/pdf/2603.06600

@@ -21,9 +21,9 @@ appear (the first entry is the lead one). Copy the title and the author list exa
 the paper's arXiv abstract page; your name is bolded automatically. Set
 `venue: arXiv preprint` and `year`, `arxiv` (the ID, in quotes) and `pdf`. `code`,
 `project`, `thumbnail` and `summary` (one line on what the paper does) are optional.
-When a paper is accepted,
-change only its `venue`, to the venue's name and year. Don't list a venue a paper is
-only submitted to.
+For a submitted paper, add `status: Under review`, which shows after the venue. Never name
+the venue it's submitted to: most venues forbid listing submissions on public websites.
+When a paper is accepted, set its `venue` to the venue's name and year and delete `status`.
 
 ```yaml
 - title: "Paper Title Exactly As On arXiv"
@@ -31,6 +31,7 @@ only submitted to.
     - First Author
     - Alexander Romanus
   venue: arXiv preprint
+  status: Under review                 # optional, never a venue name
   year: 2027
   arxiv: "2701.01234"
   pdf: https://arxiv.org/pdf/2701.01234
@@ -39,7 +40,8 @@ only submitted to.
     One line on the paper.
 ```
 
-**Add a news item.** Add it at the top of `_data/news.yml`, with the date as `"YYYY-MM"`
+**Add a news item.** Add it to `_data/news.yml` in date order, newest first (usually
+at the top), with the date as `"YYYY-MM"`
 and one line of text (Markdown links are fine). The page shows the five newest; older ones
 move under a "Show all news" expander automatically.
 

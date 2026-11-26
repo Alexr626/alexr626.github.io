@@ -24,6 +24,10 @@ into any committed file or commit message.
 - Nov 25, 2026: Alex prefers blue and cool colours, with "a little pizzazz" over a plain
   page. The palette is cobalt and teal on a cool white, navy in dark mode; keep accents
   subtle.
+- Nov 25, 2026: papers under review show "Under review" after the venue line, never the
+  venue's name (see Publication status).
+- Nov 25, 2026: news stays in strict date order, newest first; a new item goes where its
+  date falls, not automatically at the top.
 
 This repo is public. Everything committed, including this file and the commit history,
 is public.
@@ -56,8 +60,9 @@ is public.
 
 ## Publication status
 
-- Each paper shows as "arXiv preprint, YEAR" with arXiv and PDF links. The status is the
-  `venue` field in `_data/publications.yml`; change it only when a paper is accepted.
+- Each paper shows as "arXiv preprint, YEAR" with arXiv and PDF links. A submitted paper
+  adds `status: Under review` in `_data/publications.yml`, with no venue named. When a
+  paper is accepted, set `venue` to the venue and year and delete `status`.
 - Never name a venue a paper is under review at, on the site or anywhere in this repo.
   Major venues' anonymity policies forbid listing a submission on a public website, and
   the penalty can fall on every co-author.
