@@ -1,0 +1,6 @@
+{%- assign p = site.data.profile -%}
+{%- if p.email_user contains "[[" or p.email_user == "" -%}
+Email <span class="todo">{{ p.email_user }}</span>
+{%- else -%}
+<span class="email">Email: {{ p.email_user | replace: ".", " [dot] " }} [at] {{ p.email_domain | replace: ".", " [dot] " }}</span>
+{%- endif -%}

@@ -1,0 +1,46 @@
+# Header, metadata and links. The introduction itself is _includes/intro.md.
+#
+# Any value that still contains "[[" is shown on the page as a highlighted
+# placeholder instead of a link, so missing items stay visible.
+
+name: Alexander Romanus
+# Used to bold Alex's name in author lists; must match the arXiv spelling.
+author_name: Alexander Romanus
+
+position: Machine Learning Engineer, Nokia
+# Optional line under the position (e.g. "Applying to PhD programs for Fall 2027").
+# Leave empty to hide it; the introduction already says this.
+status: ""
+
+# One-sentence bio used for the meta description and link previews.
+bio: >-
+  Machine Learning Engineer at Nokia studying how vision-language models combine
+  visual and textual information, using causal tracing, activation patching and
+  activation steering.
+
+headshot: /assets/img/headshot.jpg
+headshot_alt: Photo of Alexander Romanus
+
+# Public CV (no phone number). Put the PDF at assets/cv/Alexander_Romanus_CV.pdf,
+# then set: cv: /assets/cv/Alexander_Romanus_CV.pdf
+cv: "[[TODO: add CV PDF]]"
+
+# Email is never written out as one address on the page. It is rendered as
+# "user [at] domain [dot] tld", with no mailto link.
+email_user: "[[CONFIRM: permanent public email]]"
+email_domain: ""
+
+links:
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=rXsy8p4AAAAJ&hl=en
+  - label: GitHub
+    url: https://github.com/Alexr626
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/alex-romanus/
+
+# Structured data (JSON-LD Person) for search engines.
+job_title: Machine Learning Engineer
+works_for: Nokia
+alumni_of:
+  - University of Southern California
+  - University of British Columbia

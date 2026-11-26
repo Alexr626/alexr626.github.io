@@ -1,0 +1,46 @@
+# Site settings. Page content lives in _data/ and _includes/intro.md; see README.md.
+
+title: Alexander Romanus
+description: >-
+  Machine Learning Engineer at Nokia studying how vision-language models combine
+  visual and textual information, using causal tracing, activation patching and
+  activation steering.
+url: https://alexr626.github.io
+baseurl: ""
+lang: en_US
+author: Alexander Romanus
+
+# No GitHub Pages theme: the layouts and CSS here are the whole site.
+theme: null
+
+# The headshot is square, so link previews use the small card.
+twitter:
+  card: summary
+
+# Default Open Graph / Twitter card image for every page.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/headshot.jpg
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - AGENTS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - source-materials/
+  - vendor/
+  - .bundle/

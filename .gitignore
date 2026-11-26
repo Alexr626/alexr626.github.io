@@ -1,0 +1,26 @@
+# Jekyll output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler (GitHub Pages pins its own versions, so no lockfile)
+.bundle/
+vendor/
+Gemfile.lock
+
+# Local-only source materials: resume, drafts, paper PDFs, the full private brief
+source-materials/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

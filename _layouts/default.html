@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  {% seo title=false %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="icon" href="data:,">
+  {% include person-jsonld.html %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ content }}
+  <footer class="site-footer">
+    <p>Last updated: {{ site.time | date: '%B %Y' }}</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+---
+layout: default
+---
+{% include header.html %}
+
+<main id="main">
+  <section class="intro" aria-label="Introduction">
+    {% capture intro %}{% include intro.md %}{% endcapture %}
+    {{ intro | markdownify }}
+  </section>
+
+  <section id="news" aria-labelledby="news-heading">
+    <h2 id="news-heading">News</h2>
+    <ul class="news">
+      {%- for item in site.data.news limit: 5 %}
+      {% include news-item.html item=item %}
+      {%- endfor %}
+    </ul>
+    {%- if site.data.news.size > 5 %}
+    <details class="more-news">
+      <summary>Show all news</summary>
+      <ul class="news">
+        {%- for item in site.data.news offset: 5 %}
+        {% include news-item.html item=item %}
+        {%- endfor %}
+      </ul>
+    </details>
+    {%- endif %}
+  </section>
+
+  <section id="publications" aria-labelledby="publications-heading">
+    <h2 id="publications-heading">Publications &amp; preprints</h2>
+    <ol class="publications">
+      {%- for pub in site.data.publications %}
+      {% include publication.html pub=pub %}
+      {%- endfor %}
+    </ol>
+  </section>
+
+  <section id="experience" aria-labelledby="experience-heading">
+    <h2 id="experience-heading">Experience</h2>
+    <ul class="experience">
+      {%- for job in site.data.experience %}
+      <li>
+        <div class="exp-line">
+          <span class="exp-what"><strong>{{ job.role | escape }}</strong>, {{ job.org | escape }}</span>
+          <span class="exp-dates">{{ job.dates | replace: '[[', '<span class="todo">[[' | replace: ']]', ']]</span>' }}</span>
+        </div>
+        {%- if job.description %}
+        <p class="exp-desc">{{ job.description | escape }}</p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+</main>

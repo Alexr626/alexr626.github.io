@@ -1,0 +1,70 @@
+# One entry per paper, in the order shown on the page (lead entry first).
+#
+# Titles and author lists are copied from the arXiv abstract pages; check any new
+# entry against arXiv before adding it. Alex's name is bolded automatically when
+# it matches author_name in profile.yml.
+#
+# Fields:
+#   title, authors (list), venue, year, arxiv (id), pdf (url)   required
+#   code, project (url)        optional buttons, shown only when set
+#   thumbnail (path), thumbnail_alt, thumbnail_width, thumbnail_height   optional
+#   summary                    optional one-line description of the paper
+#   note                       optional one-line description of Alex's contribution
+#
+# venue is the status line. Once a paper is accepted, change only this field to the
+# venue's name and year. Never name a venue a paper is under review at.
+
+- title: "From Local Evidence to Safety Verdicts: Causal Tracing in Vision-Language Models"
+  authors:
+    - Faezeh Dehghan Tarzjani
+    - Mevan Wijewardena
+    - Alexander Romanus
+    - Sampad Mohanty
+  venue: arXiv preprint
+  year: 2026
+  arxiv: "2610.07514"
+  pdf: https://arxiv.org/pdf/2610.07514
+  summary: >-
+    Builds matched safe and unsafe image-text pairs and transfers internal states
+    between them in three VLMs, locating where in the decoder a joint safety verdict
+    can be changed. [[CONFIRM: summary wording]]
+  note: >-
+    Proposed the original idea and ran the counterfactual activation-patching
+    experiments. [[CONFIRM: note wording]]
+
+- title: "FuzzingRL: Reinforcement Fuzz-Testing for Revealing VLM Failures"
+  authors:
+    - Jiajun Xu
+    - Jiageng Mao
+    - Ang Qi
+    - Weiduo Yuan
+    - Alexander Romanus
+    - Helen Xia
+    - Vitor Campagnolo Guizilini
+    - Yue Wang
+  venue: arXiv preprint
+  year: 2026
+  arxiv: "2603.06600"
+  pdf: https://arxiv.org/pdf/2603.06600
+  summary: >-
+    Combines vision-language fuzzing with adversarial reinforcement fine-tuning to
+    surface systematic VLM failure modes; the learned fuzzing policy transfers to
+    unseen VLMs.
+  note: >-
+    Collected and annotated diagnostic data across 24 VLM capability
+    subdimensions. [[CONFIRM: note wording]]
+
+- title: "Quantifying Symptom Causality in Clinical Decision Making: An Exploration Using CausaLM"
+  authors:
+    - Alexander Romanus
+    - Mehul Shetty
+    - Connor Jordan
+  venue: arXiv preprint
+  year: 2025
+  arxiv: "2503.19394"
+  pdf: https://arxiv.org/pdf/2503.19394
+  summary: >-
+    Applies CausaLM-style counterfactual representations to BERT models trained on
+    DDXPlus to measure each symptom's causal effect on diagnostic predictions.
+  note: >-
+    Proposed and led the project. [[CONFIRM: note wording]]

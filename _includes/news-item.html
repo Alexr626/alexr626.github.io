@@ -1,0 +1,4 @@
+{%- assign months = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
+{%- assign parts = include.item.date | split: "-" -%}
+{%- assign m = parts[1] | plus: 0 | minus: 1 -%}
+<li><span class="news-date">{{ months[m] }} {{ parts[0] }}</span> <span class="news-text">{{ include.item.text | markdownify | remove: '<p>' | remove: '</p>' | strip | replace: '[[', '<span class="todo">[[' | replace: ']]', ']]</span>' }}</span></li>

@@ -1,0 +1,30 @@
+# Most relevant first. One line of description at most (optional).
+# Earlier roles are left to the CV PDF.
+
+- role: Machine Learning Engineer
+  org: Nokia
+  dates: "[[CONFIRM: start date]] – present"
+
+- role: Machine Learning Research Engineer
+  org: Nokia Bell Labs
+  dates: "Jun – Aug 2026; Jan – May 2025"
+  description: "LLM-agent systems (LangGraph, Google ADK, RAG); VLM fine-tuning."
+
+- role: Machine Learning Engineer
+  org: Medtronic
+  dates: "Jun 2025 – May 2026"
+  description: "Agentic data-analysis tooling on Databricks/AWS."
+
+- role: Research Assistant
+  org: USC Physical Superintelligence Lab
+  dates: "Sep 2025 – Jan 2026"
+
+- role: Data Science Research Assistant (NSERC USRA)
+  org: UBC Department of Statistics
+  dates: "May – Aug 2023"
+  description: "Relaxed LASSO for high-dimensional survival models."
+
+- role: Data Science Research Assistant
+  org: UBC Department of Obstetrics & Gynaecology
+  dates: "Sep 2022 – Apr 2023"
+  description: "Causal ML for treatment-effect estimation."
