@@ -21,10 +21,10 @@ bio: >-
 headshot: /assets/img/headshot.jpg
 headshot_alt: Photo of Alexander Romanus
 
-# CV link, hidden while empty (Alex, Nov 25, 2026: no CV on the site for now).
-# Set it to /assets/cv/Alexander_Romanus_CV.pdf or a public link, after checking the
-# PDF against AGENTS.md's privacy list and for any submission venue.
-cv: ""
+# CV link, hidden while empty. A path such as /assets/cv/Alexander_Romanus_CV.pdf or a
+# public link; check a new PDF against AGENTS.md's privacy list and for any submission
+# venue, and tell Alex what it finds, before linking it.
+cv: https://drive.google.com/file/d/1EpuibS5yOTJNYgBejQnLw8ivy9jTYZQ7/view
 
 # Contact email. Never written out as one address on the page or in this repo: it is
 # rendered as "user [at] domain [dot] tld", with no mailto link.

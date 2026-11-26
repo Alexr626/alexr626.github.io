@@ -54,9 +54,9 @@ move under a "Show all news" expander automatically.
 optional one-line `description`, in order of end date, newest first. For an internship
 or co-op, end the role with "Intern" or "Co-op".
 
-**Add the CV.** There's no CV link while `cv` in `_data/profile.yml` is empty. To add one,
-put the PDF at `assets/cv/Alexander_Romanus_CV.pdf` and set
-`cv: /assets/cv/Alexander_Romanus_CV.pdf`, or set `cv` to a public link. First make sure
+**Change the CV.** The CV link is `cv` in `_data/profile.yml`; leaving it empty hides
+the link. Set it to a public link, or put the PDF at `assets/cv/Alexander_Romanus_CV.pdf`
+and set `cv: /assets/cv/Alexander_Romanus_CV.pdf`. First make sure
 the PDF has no phone number, home city or GPA, and names no venue a paper is only
 submitted to.
 

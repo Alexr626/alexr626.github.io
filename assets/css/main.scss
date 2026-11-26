@@ -18,7 +18,7 @@
   --todo-bg: #fff1b8;
   --todo-text: #4a3b00;
   --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, "Noto Serif", Georgia, serif;
-  --measure: 70ch;
+  --measure: 54rem;     /* longest experience line needs ~825px in Georgia or Sitka */
 }
 
 @media (prefers-color-scheme: dark) {
