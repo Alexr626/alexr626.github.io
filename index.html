@@ -39,8 +39,13 @@ layout: default
 
   <section id="experience" aria-labelledby="experience-heading">
     <h2 id="experience-heading">Experience</h2>
+    {%- assign groups = site.data.experience | group_by: "group" %}
+    {%- for group in groups %}
+    {%- if group.name != "" %}
+    <h3 class="exp-group">{{ group.name | escape }}</h3>
+    {%- endif %}
     <ul class="experience">
-      {%- for job in site.data.experience %}
+      {%- for job in group.items %}
       <li>
         <div class="exp-line">
           <span class="exp-what"><strong>{{ job.role | escape }}</strong>, {{ job.org | escape }}</span>
@@ -52,5 +57,6 @@ layout: default
       </li>
       {%- endfor %}
     </ul>
+    {%- endfor %}
   </section>
 </main>

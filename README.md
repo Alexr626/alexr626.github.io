@@ -20,7 +20,8 @@ All content lives in data files. Layout code doesn't need to change for routine 
 appear (the first entry is the lead one). Copy the title and the author list exactly from
 the paper's arXiv abstract page; your name is bolded automatically. Set
 `venue: arXiv preprint` and `year`, `arxiv` (the ID, in quotes) and `pdf`. `code`,
-`project`, `thumbnail`, `summary` and `note` are optional. When a paper is accepted,
+`project`, `thumbnail` and `summary` (one line on what the paper does) are optional.
+When a paper is accepted,
 change only its `venue`, to the venue's name and year. Don't list a venue a paper is
 only submitted to.
 
@@ -34,8 +35,8 @@ only submitted to.
   arxiv: "2701.01234"
   pdf: https://arxiv.org/pdf/2701.01234
   code: https://github.com/...        # optional
-  note: >-                             # optional, your contribution in one line
-    One line on what you did.
+  summary: >-                          # optional, one line on what the paper does
+    One line on the paper.
 ```
 
 **Add a news item.** Add it at the top of `_data/news.yml`, with the date as `"YYYY-MM"`
@@ -46,6 +47,10 @@ move under a "Show all news" expander automatically.
 - date: "2027-02"
   text: "New preprint on ... posted to [arXiv](https://arxiv.org/abs/2702.01234)."
 ```
+
+**Add a position.** Add it to `_data/experience.yml` with `role`, `org`, `dates` and an
+optional one-line `description`. Give internships and co-ops
+`group: Internships and co-ops` so they're listed under that subheading.
 
 **Swap the CV.** Replace `assets/cv/Alexander_Romanus_CV.pdf`, keeping the file name, and
 make sure the PDF has no phone number. The first time, set
@@ -78,7 +83,7 @@ _includes/intro.md     the introduction (Markdown)
 _includes/*.html       header, email, publication and news entries, JSON-LD Person data
 _layouts/default.html  page shell and footer ("Last updated" is the build date)
 assets/css/main.scss   the only stylesheet (light and dark colours at the top)
-assets/img/            headshot (400x400, metadata stripped)
+assets/img/            headshot (400x400, metadata stripped), favicon.svg
 assets/cv/             public CV PDF
 ```
 

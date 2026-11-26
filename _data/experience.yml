@@ -1,30 +1,37 @@
 # Most relevant first. One line of description at most (optional).
+# Entries with the same `group` are listed together under that subheading, in the
+# order the group first appears; entries without a group come with no subheading.
 # Earlier roles are left to the CV PDF.
 
 - role: Machine Learning Engineer
   org: Nokia
-  dates: "[[CONFIRM: start date]] – present"
+  dates: "Sep 2026 – present"
 
 - role: Machine Learning Research Engineer
   org: Nokia Bell Labs
   dates: "Jun – Aug 2026; Jan – May 2025"
   description: "LLM-agent systems (LangGraph, Google ADK, RAG); VLM fine-tuning."
+  group: Internships and co-ops
 
 - role: Machine Learning Engineer
   org: Medtronic
   dates: "Jun 2025 – May 2026"
   description: "Agentic data-analysis tooling on Databricks/AWS."
+  group: Internships and co-ops
 
 - role: Research Assistant
   org: USC Physical Superintelligence Lab
   dates: "Sep 2025 – Jan 2026"
+  group: Internships and co-ops
 
 - role: Data Science Research Assistant (NSERC USRA)
   org: UBC Department of Statistics
   dates: "May – Aug 2023"
   description: "Relaxed LASSO for high-dimensional survival models."
+  group: Internships and co-ops
 
 - role: Data Science Research Assistant
   org: UBC Department of Obstetrics & Gynaecology
   dates: "Sep 2022 – Apr 2023"
   description: "Causal ML for treatment-effect estimation."
+  group: Internships and co-ops

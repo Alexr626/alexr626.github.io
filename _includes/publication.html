@@ -25,8 +25,5 @@
     {%- if pub.summary %}
     <p class="pub-summary">{{ pub.summary | replace: '[[', '<span class="todo">[[' | replace: ']]', ']]</span>' }}</p>
     {%- endif %}
-    {%- if pub.note %}
-    <p class="pub-note">My contribution: {{ pub.note | replace: '[[', '<span class="todo">[[' | replace: ']]', ']]</span>' }}</p>
-    {%- endif %}
   </div>
 </li>

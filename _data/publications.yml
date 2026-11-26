@@ -9,7 +9,8 @@
 #   code, project (url)        optional buttons, shown only when set
 #   thumbnail (path), thumbnail_alt, thumbnail_width, thumbnail_height   optional
 #   summary                    optional one-line description of the paper
-#   note                       optional one-line description of Alex's contribution
+#
+# No per-paper contribution notes (Alex, Nov 25, 2026).
 #
 # venue is the status line. Once a paper is accepted, change only this field to the
 # venue's name and year. Never name a venue a paper is under review at.
@@ -28,9 +29,6 @@
     Builds matched safe and unsafe image-text pairs and transfers internal states
     between them in three VLMs, locating where in the decoder a joint safety verdict
     can be changed. [[CONFIRM: summary wording]]
-  note: >-
-    Proposed the original idea and ran the counterfactual activation-patching
-    experiments. [[CONFIRM: note wording]]
 
 - title: "FuzzingRL: Reinforcement Fuzz-Testing for Revealing VLM Failures"
   authors:
@@ -50,9 +48,6 @@
     Combines vision-language fuzzing with adversarial reinforcement fine-tuning to
     surface systematic VLM failure modes; the learned fuzzing policy transfers to
     unseen VLMs.
-  note: >-
-    Collected and annotated diagnostic data across 24 VLM capability
-    subdimensions. [[CONFIRM: note wording]]
 
 - title: "Quantifying Symptom Causality in Clinical Decision Making: An Exploration Using CausaLM"
   authors:
@@ -66,5 +61,3 @@
   summary: >-
     Applies CausaLM-style counterfactual representations to BERT models trained on
     DDXPlus to measure each symptom's causal effect on diagnostic predictions.
-  note: >-
-    Proposed and led the project. [[CONFIRM: note wording]]

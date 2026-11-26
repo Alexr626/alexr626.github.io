@@ -25,10 +25,10 @@ headshot_alt: Photo of Alexander Romanus
 # then set: cv: /assets/cv/Alexander_Romanus_CV.pdf
 cv: "[[TODO: add CV PDF]]"
 
-# Email is never written out as one address on the page. It is rendered as
-# "user [at] domain [dot] tld", with no mailto link.
-email_user: "[[CONFIRM: permanent public email]]"
-email_domain: ""
+# Contact email. Never written out as one address on the page or in this repo: it is
+# rendered as "user [at] domain [dot] tld", with no mailto link.
+email_user: aromanus
+email_domain: gmail.com
 
 links:
   - label: Google Scholar

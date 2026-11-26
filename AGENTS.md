@@ -8,8 +8,22 @@ routine updates touch one data file, not layout code.
 
 **Read first, if it exists:** `source-materials/WEBSITE_TASK.md`, the full original brief.
 It is local only (gitignored) because it holds private rules and context that must never
-be published. Where it is more specific than this file, it wins. Never commit it, quote
-it, or copy its private details into any committed file or commit message.
+be published. Where it is more specific than this file, it wins, except where Alex
+decided otherwise later (below). Never commit it, quote it, or copy its private details
+into any committed file or commit message.
+
+## Alex's decisions since the brief
+
+- Nov 25, 2026: no per-paper contribution notes ("no one I've seen has done that on
+  their personal websites"). The brief's draft notes are dropped.
+- Nov 25, 2026: the contact email is set in `_data/profile.yml`, split into user and
+  domain. Never write it out as one address anywhere in the repo.
+- Nov 25, 2026: the current Nokia role started in Sep 2026. Every other experience entry
+  was an internship or co-op; they are listed under an "Internships and co-ops"
+  subheading (`group` in `_data/experience.yml`).
+- Nov 25, 2026: Alex prefers blue and cool colours, with "a little pizzazz" over a plain
+  page. The palette is cobalt and teal on a cool white, navy in dark mode; keep accents
+  subtle.
 
 This repo is public. Everything committed, including this file and the commit history,
 is public.
@@ -45,6 +59,8 @@ is public.
 - Each paper shows as "arXiv preprint, YEAR" with arXiv and PDF links. The status is the
   `venue` field in `_data/publications.yml`; change it only when a paper is accepted.
 - Never name a venue a paper is under review at, on the site or anywhere in this repo.
+  Major venues' anonymity policies forbid listing a submission on a public website, and
+  the penalty can fall on every co-author.
 
 ## Privacy: never in the site or the repo
 

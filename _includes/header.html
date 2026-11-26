@@ -7,13 +7,13 @@
     {%- if p.status != "" %}
     <p class="status">{{ p.status }}</p>
     {%- endif %}
-    <ul class="links" aria-label="Profiles and contact">
-      <li>{% if p.cv contains "[[" %}CV <span class="todo">{{ p.cv }}</span>{% else %}<a href="{{ p.cv | relative_url }}">CV</a>{% endif %}</li>
+    <ul class="links" aria-label="Profiles">
+      <li>{% if p.cv contains "[[" %}CV <span class="todo">{{ p.cv }}</span>{% else %}<a class="chip" href="{{ p.cv | relative_url }}">CV</a>{% endif %}</li>
       {%- for link in p.links %}
-      <li>{% if link.url contains "[[" %}{{ link.label }} <span class="todo">{{ link.url }}</span>{% else %}<a href="{{ link.url }}">{{ link.label }}</a>{% endif %}</li>
+      <li>{% if link.url contains "[[" %}{{ link.label }} <span class="todo">{{ link.url }}</span>{% else %}<a class="chip" href="{{ link.url }}">{{ link.label }}</a>{% endif %}</li>
       {%- endfor %}
-      <li>{% include email.html %}</li>
     </ul>
+    <p class="contact">{% include email.html %}</p>
   </div>
 </header>
 <nav class="section-nav" aria-label="Sections">
