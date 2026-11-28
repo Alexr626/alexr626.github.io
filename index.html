@@ -4,9 +4,16 @@ layout: default
 {% include header.html %}
 
 <main id="main">
-  <section class="intro" aria-label="Introduction">
-    {% capture intro %}{% include intro.md %}{% endcapture %}
-    {{ intro | markdownify }}
+  <section id="about" aria-labelledby="about-heading">
+    <h2 id="about-heading">About Me</h2>
+    {% capture about %}{% include about.md %}{% endcapture %}
+    {{ about | markdownify }}
+  </section>
+
+  <section id="background" aria-labelledby="background-heading">
+    <h2 id="background-heading">Background</h2>
+    {% capture background %}{% include background.md %}{% endcapture %}
+    {{ background | markdownify }}
   </section>
 
   <section id="news" aria-labelledby="news-heading">

@@ -1,4 +1,5 @@
-# Site settings. Page content lives in _data/ and _includes/intro.md; see README.md.
+# Site settings. Page content lives in _data/, _includes/about.md and
+# _includes/background.md; see README.md.
 
 title: Alexander Romanus
 description: >-

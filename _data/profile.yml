@@ -1,4 +1,5 @@
-# Header, metadata and links. The introduction itself is _includes/intro.md.
+# Header, metadata and links. The About Me and Background text is in
+# _includes/about.md and _includes/background.md.
 #
 # Any value that still contains "[[" is shown on the page as a highlighted
 # placeholder instead of a link, so missing items stay visible.
@@ -8,8 +9,7 @@ name: Alexander Romanus
 author_name: Alexander Romanus
 
 position: Machine Learning Engineer, Nokia
-# Optional line under the position (e.g. "Applying to PhD programs for Fall 2027").
-# Leave empty to hide it; the introduction already says this.
+# Optional line under the position. Leave empty to hide it.
 status: ""
 
 # One-sentence bio used for the meta description and link previews.

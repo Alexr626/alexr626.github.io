@@ -13,7 +13,8 @@ All content lives in data files. Layout code doesn't need to change for routine 
 | A publication | `_data/publications.yml` |
 | News | `_data/news.yml` |
 | Experience | `_data/experience.yml` |
-| The introduction | `_includes/intro.md` |
+| About Me | `_includes/about.md` |
+| Background | `_includes/background.md` |
 | Name, position line, links, email, headshot, CV link | `_data/profile.yml` |
 
 **Add a publication.** Add an entry to `_data/publications.yml` in the position it should
@@ -83,7 +84,7 @@ certificate.
 ```
 _config.yml            site settings, plugins (jekyll-seo-tag, jekyll-sitemap), excluded files
 _data/                 profile, publications, news, experience
-_includes/intro.md     the introduction (Markdown)
+_includes/*.md         About Me and Background text (Markdown)
 _includes/*.html       header, email, publication and news entries, JSON-LD Person data
 _layouts/default.html  page shell and footer ("Last updated" is the build date)
 assets/css/main.scss   the only stylesheet (light and dark colours at the top)

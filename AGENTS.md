@@ -42,6 +42,11 @@ into any committed file or commit message.
 - Nov 25, 2026: the column is 54rem wide, so the longest experience and paper titles fit
   on one line on desktop in Charter, Georgia, Sitka Text, Cambria and Times. Check this
   again when adding a longer title.
+- Nov 27, 2026: the site doesn't say Alex is applying to PhD programs.
+- Nov 27, 2026: the introduction is two named sections, "About Me" (role and research)
+  and "Background" (degrees, earlier roles, how he came to interpretability), so the
+  page reads less like other researchers' sites. The "Questions I'm thinking about" box
+  was dropped.
 
 This repo is public. Everything committed, including this file and the commit history,
 is public.
@@ -99,12 +104,12 @@ messages.
 ## Update workflow
 
 Content lives in `_data/profile.yml`, `_data/publications.yml`, `_data/news.yml`,
-`_data/experience.yml`, `_includes/intro.md` and `assets/cv/Alexander_Romanus_CV.pdf`.
-When Alex asks for an update, edit the data file only, build, check the page, and
-summarize what changed. Keep `README.md`'s "How to update the site" current.
+`_data/experience.yml`, `_includes/about.md` and `_includes/background.md`. When Alex
+asks for an update, edit the data file only, build, check the page, and summarize what
+changed. Keep `README.md`'s "How to update the site" current.
 
-The introduction is Alex's own copy: he line-edits it. Don't rephrase it into generic
-language; if something must change, keep the technical specificity.
+The About Me and Background text is Alex's own copy: he line-edits it. Don't rephrase it
+into generic language; if something must change, keep the technical specificity.
 
 ## Technical constraints
 
@@ -114,7 +119,8 @@ language; if something must change, keep the technical specificity.
   site currently has no JavaScript at all.
 - If Alex asks for the al-folio look, confirm before switching: it needs an Actions
   deploy and is heavier to maintain.
-- Design: one serif system font stack, ~70ch measure, one accent colour, light and dark
+- Design: one serif system font stack, a 54rem column, a cobalt accent with teal for
+  decoration only, light and dark
   via `prefers-color-scheme`, responsive down to 375px, WCAG AA contrast, visible focus,
   nothing conveyed by colour alone, explicit image width and height, Lighthouse 95+.
 

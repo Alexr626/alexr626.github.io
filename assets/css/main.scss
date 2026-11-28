@@ -186,26 +186,9 @@ p { margin: 0 0 1rem; }
 }
 .section-nav span { margin: 0 0.45rem; }
 
-/* Introduction */
-
-.intro { margin-top: 2rem; }
-
-details.questions {
-  margin: 0 0 1.1rem;
-  padding: 0.6rem 1rem;
-  border-left: 3px solid var(--accent-2);
-  border-radius: 0 8px 8px 0;
-  background: var(--tint);
-}
-details summary { cursor: pointer; }
-details.questions summary { color: var(--accent); font-weight: 600; }
-details.questions[open] summary { margin-bottom: 0.5rem; }
-details.questions ul { margin: 0; padding-left: 1.2rem; }
-details.questions li { margin-bottom: 0.4rem; }
-details.questions li::marker { color: var(--accent-2); }
-
 /* News */
 
+details summary { cursor: pointer; }
 .news { list-style: none; margin: 0; padding: 0; }
 .news li {
   display: grid;
