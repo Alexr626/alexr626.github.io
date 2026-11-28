@@ -186,6 +186,12 @@ p { margin: 0 0 1rem; }
 }
 .section-nav span { margin: 0 0.45rem; }
 
+/* About Me */
+
+#about ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+#about li { margin-bottom: 0.3rem; }
+#about li::marker { color: var(--accent-2); }
+
 /* News */
 
 details summary { cursor: pointer; }

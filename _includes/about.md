@@ -1,1 +1,7 @@
-I'm a Machine Learning Engineer at [Nokia](https://www.nokia.com/). **My research uses mechanistic interpretability to understand how vision-language models integrate what they see with what they read, and where that integration goes wrong.** Many of the failures I find most interesting only exist at the intersection of modalities. In [compositional safety failures](https://arxiv.org/abs/2610.07514), for example, an image and a prompt that are each benign combine into an unsafe output, and the model's judgment depends on how visual evidence is routed into its language representations. I study these interactions with causal methods, such as causal tracing, activation patching and counterfactual interventions, to localize *where* and *in which components* cross-modal information shapes a model's behavior. Ultimately, I want this understanding to support principled inference-time interventions, such as activation steering, that make VLMs safer and less prone to hallucination without retraining.
+I'm a Machine Learning Engineer at [Nokia](https://www.nokia.com/). **My research uses mechanistic interpretability to understand and control vision-language models.** Specifically, I'm interested in:
+
+- how VLMs represent and use multimodal information,
+- how their failures trace back to causal, internal mechanisms, and
+- how control methods can use those mechanisms to correct such failures.
+
+For example, in [compositional safety failures](https://arxiv.org/abs/2610.07514), an image and a prompt that are each benign combine into an unsafe output. I study failures like these with causal methods, such as causal tracing, activation patching and counterfactual interventions, to localize *where* and *in which components* they arise.

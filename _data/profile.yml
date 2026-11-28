@@ -14,9 +14,8 @@ status: ""
 
 # One-sentence bio used for the meta description and link previews.
 bio: >-
-  Machine Learning Engineer at Nokia studying how vision-language models combine
-  visual and textual information, using causal tracing, activation patching and
-  activation steering.
+  Machine Learning Engineer at Nokia using mechanistic interpretability to understand
+  and control vision-language models.
 
 headshot: /assets/img/headshot.jpg
 headshot_alt: Photo of Alexander Romanus
